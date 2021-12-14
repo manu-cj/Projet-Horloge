@@ -4,11 +4,9 @@ let heures = document.getElementById('heures');
 
 let aujourdhui = new Date();
 
-
 let second = aujourdhui.getSeconds();
 let minut = aujourdhui.getMinutes();
 let heure = aujourdhui.getHours();
-
 
 setInterval(() => {
     second++
