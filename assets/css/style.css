@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#horloge {
+    width: 567px;
+    height: 567px;
+    border: ridge 2px palevioletred;
+    margin-top: 100px;
+    background-image: url(../img/uploads.siteduzero.com_files_163001_164000_163059.png);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    border-radius: 284px;
+}
+
+#heures {
+    position: absolute;
+    top: 260px;
+    left: 278px;
+    transform-origin: bottom center;
+}
+
+#minutes {
+    position: absolute;
+    top: 255px;
+    left: 278px;
+    transform-origin: bottom center;
+}
+
+#secondes {
+    position: absolute;
+    top: 240px;
+    left: 278px;
+    transform-origin: bottom center;
+}
