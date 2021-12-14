@@ -26,21 +26,21 @@ body {
 
 #heures {
     position: absolute;
-    top: 260px;
+    bottom: 275px;
     left: 268px;
     transform-origin: bottom center;
 }
 
 #minutes {
     position: absolute;
-    top: 255px;
+    bottom: 275px;
     left: 268px;
     transform-origin: bottom center;
 }
 
 #secondes {
     position: absolute;
-    top: 235px;
+    bottom: 275px;
     left: 268px;
     transform-origin: bottom center;
 }
