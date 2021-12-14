@@ -8,6 +8,8 @@ let second = aujourdhui.getSeconds();
 let minut = aujourdhui.getMinutes();
 let heure = aujourdhui.getHours();
 
+console.log(heure)
+
 setInterval(() => {
     second++
     secondes.style.transform = 'rotate(' + (second * 6) + 'deg)';
@@ -15,3 +17,15 @@ setInterval(() => {
     heures.style.transform = 'rotate(' + (heure * 120) + 'deg)';
 }, 1000);
 
+
+/**
+ * function change hours in working
+
+function changeHours() {
+    heure = aujourdhui.getHours() + 5;
+}
+
+document.getElementById('change').addEventListener("click", () => {
+    changeHours()
+})
+*/
