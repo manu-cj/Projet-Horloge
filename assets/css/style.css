@@ -89,6 +89,13 @@ body {
 
 #change {
    margin-top: 50px;
+    width: 30%;
+    border: ridge 4px firebrick;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
 }
 
 #color {
