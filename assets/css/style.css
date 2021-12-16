@@ -14,6 +14,7 @@ body {
 }
 
 #animation {
+    margin: 50px;
     width: 567px;
     height: 567px;
     z-index: -1;
@@ -25,6 +26,7 @@ body {
 
 
 #horloge {
+    margin: 50px;
     width: 567px;
     height: 567px;
     border: ridge 10px palevioletred;
