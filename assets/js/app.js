@@ -28,11 +28,15 @@ buttonChangeColor.addEventListener("click", () => {
 document.getElementById('defaut').addEventListener("click", () => {
     horloge.style.backgroundImage = 'url(/assets/img/uploads.siteduzero.com_files_163001_164000_163059.png)';
     horloge.style.backgroundSize = 'cover';
+    document.getElementById('defaut').style.borderColor = 'red';
+    document.getElementById('ios').style.borderColor = 'black';
 })
 
 document.getElementById('ios').addEventListener("click", () => {
     horloge.style.backgroundImage = 'url(/assets/img/téléchargement.png)';
     horloge.style.backgroundSize = '500px, 500px';
     horloge.style.backgroundRepeat = 'no-repeat';
+    document.getElementById('ios').style.borderColor = 'red';
+    document.getElementById('defaut').style.borderColor = 'black';
 })
 

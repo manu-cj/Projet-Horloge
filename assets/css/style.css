@@ -68,8 +68,9 @@ body {
     background-size: cover;
     width: 100px;
     height: 100px;
-    border: ridge 2px black;
+    border: ridge 3px black;
     border-radius: 10px;
+    margin: 2px;
 }
 
 #ios {
@@ -77,8 +78,9 @@ body {
     background-size: cover;
     width: 100px;
     height: 100px;
-    border: ridge 2px black;
+    border: ridge 3px black;
     border-radius: 10px;
+    margin: 2px;
 }
 
 #changeClock:hover {
