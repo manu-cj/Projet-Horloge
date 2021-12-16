@@ -10,6 +10,7 @@ setInterval(() => {
     secondes.style.transform = 'rotate(' + (time * 6) + 'deg)';
     minutes.style.transform = 'rotate(' + Math.round(time /10) + 'deg)';
     heures.style.transform = 'rotate(' + Math.round(time / 120) + 'deg)';
+    document.getElementById('animation').style.transform = 'rotate(' + (time * 60) + 'deg)';
 }, 1000);
 
 
