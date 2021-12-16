@@ -4,17 +4,12 @@ let heures = document.getElementById('heures');
 
 let aujourdhui = new Date();
 
-let second = aujourdhui.getSeconds();
-let minut = aujourdhui.getMinutes();
-let heure = aujourdhui.getHours();
-
-console.log(heure)
-
+let time = aujourdhui.getSeconds() + 60 * aujourdhui.getMinutes() + 3600 * aujourdhui.getHours();
 setInterval(() => {
-    second++
-    secondes.style.transform = 'rotate(' + (second * 6) + 'deg)';
-    minutes.style.transform = 'rotate(' + (minut * 6) + 'deg)';
-    heures.style.transform = 'rotate(' + (heure * 120) + 'deg)';
+    time++
+    secondes.style.transform = 'rotate(' + (time * 6) + 'deg)';
+    minutes.style.transform = 'rotate(' + Math.round(time /10) + 'deg)';
+    heures.style.transform = 'rotate(' + Math.round(time / 120) + 'deg)';
 }, 1000);
 
 
@@ -30,6 +25,17 @@ buttonChangeColor.addEventListener("click", () => {
     changeColor()
 })
 
+document.getElementById('defaut').addEventListener("click", () => {
+    horloge.style.backgroundImage = 'url(/assets/img/uploads.siteduzero.com_files_163001_164000_163059.png)';
+    horloge.style.backgroundSize = 'cover';
+})
+
+document.getElementById('ios').addEventListener("click", () => {
+    horloge.style.backgroundImage = 'url(/assets/img/téléchargement.png)';
+    horloge.style.backgroundSize = '500px, 500px';
+    horloge.style.backgroundRepeat = 'no-repeat';
+})
+
 /**
  * function change hours in working
 
@@ -40,4 +46,4 @@ function changeHours() {
 document.getElementById('change').addEventListener("click", () => {
     changeHours()
 })
-*/
+ */
