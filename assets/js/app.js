@@ -36,14 +36,3 @@ document.getElementById('ios').addEventListener("click", () => {
     horloge.style.backgroundRepeat = 'no-repeat';
 })
 
-/**
- * function change hours in working
-
-function changeHours() {
-    heure = aujourdhui.getHours() + 5;
-}
-
-document.getElementById('change').addEventListener("click", () => {
-    changeHours()
-})
- */

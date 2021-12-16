@@ -10,6 +10,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
 
 #horloge {
@@ -86,4 +87,8 @@ body {
 
 #change {
    margin-top: 50px;
+}
+
+#color {
+    margin: 20px;
 }
