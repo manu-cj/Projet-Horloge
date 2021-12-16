@@ -13,7 +13,6 @@ setInterval(() => {
     document.getElementById('animation').style.transform = 'rotate(' + (time * 60) + 'deg)';
 }, 1000);
 
-
 let horloge = document.getElementById('horloge');
 let color = document.getElementById('color');
 let buttonChangeColor = document.getElementById('appliquer');
