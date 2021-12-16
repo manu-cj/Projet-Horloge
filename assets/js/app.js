@@ -18,6 +18,18 @@ setInterval(() => {
 }, 1000);
 
 
+let horloge = document.getElementById('horloge');
+let color = document.getElementById('color');
+let buttonChangeColor = document.getElementById('appliquer');
+
+function changeColor() {
+    horloge.style.borderColor = color.value;
+}
+
+buttonChangeColor.addEventListener("click", () => {
+    changeColor()
+})
+
 /**
  * function change hours in working
 
