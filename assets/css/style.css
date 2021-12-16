@@ -13,16 +13,35 @@ body {
     text-align: center;
 }
 
+#animation {
+    width: 567px;
+    height: 567px;
+    z-index: -1;
+    border: ridge 2px black;
+    border-radius: 284px;
+    position: absolute;
+    animation-name: anim;
+    animation-iteration-count: infinite;
+    animation-duration: 2000s;
+    box-shadow: 5px 5px 15px 5px #FF8080, -9px 5px 15px 5px #FFE488, -7px -5px 15px 5px #8CFF85, 12px -5px 15px 5px #80C7FF, 12px 10px 15px 7px #E488FF, -10px 10px 15px 7px #FF616B, -10px -7px 27px 1px #8E5CFF, 5px 5px 50px -30px #000000;
+}
+
+@keyframes anim {
+    0% {
+        transform: rotate(-360000deg);
+    }
+}
+
 #horloge {
     width: 567px;
     height: 567px;
     border: ridge 10px palevioletred;
-    margin-top: 100px;
     background-image: url(../img/uploads.siteduzero.com_files_163001_164000_163059.png);
     background-position: center;
     background-size: cover;
     position: relative;
     border-radius: 284px;
+    z-index: -1;
 }
 
 #heures {
@@ -88,8 +107,8 @@ body {
 }
 
 #change {
-   margin-top: 50px;
-    width: 30%;
+    margin-top: 50px;
+    width: 400px;
     border: ridge 4px firebrick;
     border-radius: 10px;
     display: flex;
